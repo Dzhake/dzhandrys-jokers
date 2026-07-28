@@ -1,7 +1,17 @@
 {
-    "id": "dzhandrys-jokers",
+    "version": "0.0.1",
+    "id": "dzhandrys_jokers",
     "name": "Dzhandry's Jokers",
     "author": [
         "Dzhandry"
+    ],
+    "description": "Mod by Dzhandry that adds new Jokers and other cards!",
+    "prefix": "dzhandrys_jokers",
+    "main_file": "main.lua",
+    "badge_colour": "3E089C",
+    "badge_text_colour": "52E815",
+    "icon_path": "icon.png",
+    "dependencies": [
+        "Lovely (>=0.6)"
     ]
 }
