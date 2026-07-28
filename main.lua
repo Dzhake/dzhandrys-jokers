@@ -1,11 +1,19 @@
 SMODS.current_mod.optional_features = {
     --quantum_enhancements = true,
     --object_weights = true,
+    post_trigger = true
 }
 
 SMODS.Atlas {
     key = "jokers",
     path = "jokers.png",
+    px = 71,
+    py = 95,
+}
+
+SMODS.Atlas {
+    key = "decks",
+    path = "decks.png",
     px = 71,
     py = 95,
 }
@@ -25,4 +33,4 @@ local function load_dir(path)
     end
 end
 
-load_dir("src/jokers")
+load_dir("src")

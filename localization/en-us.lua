@@ -1,5 +1,14 @@
 return {
     descriptions = {
+        Back = {
+            b_dzhandrys_jokers_x_deck = {
+                name = "X Deck",
+                text = {
+                    "When a {C:mult}+ Mult{} or {B:1,C:white}X Mult{} is applied,",
+                    "an additional {X:mult,C:white}X#1#{} Mult is applied"
+                }
+            }
+        },
         Joker = {
             j_dzhandrys_jokers_superior_joker = {
                 name = "Superior Joker",
@@ -7,7 +16,6 @@ return {
                     "{X:mult,C:white}X#1# {} Mult"
                 }
             },
-
             j_dzhandrys_jokers_superior_greedy_joker = {
                 name = "Superior Greedy Joker",
                 text = {
@@ -40,7 +48,6 @@ return {
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-
             j_dzhandrys_jokers_superior_jolly_joker = {
                 name = "Superior Jolly Joker",
                 text = {
@@ -122,7 +129,6 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-
             j_dzhandrys_jokers_superior_half_joker = {
                 name = "Superior Half Joker",
                 text = {
@@ -132,6 +138,19 @@ return {
                 unlock = {
                     "Reduce deck size to {X:mult,C:white}#1#",
                     "{C:inactive}(Currently {C:attention}#2#{})"
+                },
+            },
+            j_dzhandrys_jokers_superior_joker_stencil = {
+                name = "Superior Joker Stencil",
+                text = {
+                    "{X:mult,C:white}X#2#{} Mult per each unused card selection",
+                    "{C:inactive}(Minimum {X:mult,C:white}X#3#{C:inactive}, current selection limit: {C:attention}#1#{C:inactive})",
+                },
+            },
+            j_dzhandrys_jokers_superior_four_fingers = {
+                name = "Superior Four Fingers",
+                text = {
+                    "All hands count as {C:attention}Straight Flush"
                 },
             },
         }
