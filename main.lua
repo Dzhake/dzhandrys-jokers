@@ -1,3 +1,8 @@
+SMODS.current_mod.optional_features = {
+    --quantum_enhancements = true,
+    --object_weights = true,
+}
+
 SMODS.Atlas {
     key = "jokers",
     path = "jokers.png",
