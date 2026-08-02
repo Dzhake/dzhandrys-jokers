@@ -4,7 +4,9 @@ return {
             b_dzhandrys_jokers_x_deck = {
                 name = "X Deck",
                 text = {
-                    "When a {C:mult}+ Mult{} or {B:1,C:white}X Mult{} is applied,",
+                    -- post_trigger only works with jokers
+                    --"When a {C:mult}+ Mult{} or {B:1,C:white}X Mult{} is applied,",
+                    "When a joker gives {C:mult}+ Mult{} or {B:1,C:white}X Mult{}",
                     "an additional {X:mult,C:white}X#1#{} Mult is applied"
                 }
             }
@@ -156,8 +158,8 @@ return {
             j_dzhandrys_jokers_superior_mime = {
                 name = "Superior Mime",
                 text = {
-                    "Double all retriggers",
-                    "{C:inactive,s:0.8}(multiplicative)"
+                    "{E:1,X:spades,C:hearts}Double{} all retriggers",
+                    "{C:inactive,s:0.4}(additive :c)"
                 },
             },
         }

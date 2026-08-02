@@ -4,23 +4,6 @@ SMODS.current_mod.optional_features = {
     post_trigger = true
 }
 
-SMODS.Atlas {
-    key = "jokers",
-    path = "jokers.png",
-    px = 71,
-    py = 95,
-}
-
-SMODS.Atlas {
-    key = "decks",
-    path = "decks.png",
-    px = 71,
-    py = 95,
-}
-
-SMODS.Attribute {
-    key = "superior"
-}
 
 local function load_dir(path)
     local items = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. path)
@@ -37,4 +20,5 @@ local function load_dir(path)
     end
 end
 
-load_dir("src")
+load_dir("main")
+load_dir("items")
