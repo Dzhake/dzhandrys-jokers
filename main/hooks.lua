@@ -29,10 +29,11 @@ function eval_card(card, context)
     return g, post
 end
 
-local ref_add_round_eval_row = add_round_eval_row
+--[[local ref_add_round_eval_row = add_round_eval_row
 function add_round_eval_row(config)
     if config.name == "interest" and next(SMODS.find_card("j_dzhrj_superior_credit_card")) then
         config.dollars = G.GAME.interest_amount * math.min(G.GAME.interest_cap / 5)
     end
     return ref_add_round_eval_row(config)
 end
+]]

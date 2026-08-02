@@ -138,8 +138,8 @@ return {
                     "when {C:attention}Blind{} is selected",
                 },
                 unlock = {
-                    "Reduce deck size to {X:mult,C:white}#1#",
-                    "{C:inactive}(Currently {C:attention}#2#{})"
+                    "Reduce deck size to {C:attention}#1#{C:inactive} or less ;)",
+                    "{C:inactive}(Currently {C:attention}#2#{C:inactive})"
                 },
             },
             j_dzhrj_superior_joker_stencil = {
@@ -162,6 +162,15 @@ return {
                     "{C:inactive,s:0.8}(additive :c)"
                 },
             },
+            j_dzhrj_superior_credit_card = {
+                name = "Superior Credit Card",
+                text = {
+                    "Rerolls cost {C:money}$5{} less"
+                },
+                unlock = {
+                    "Have {X:money,C:white}$#1#{} or less",
+                },
+            }
         }
     }
 }

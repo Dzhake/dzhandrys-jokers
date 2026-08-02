@@ -29,11 +29,11 @@ SMODS.Joker {
     end,
 
     locked_loc_vars = function(self, info_queue, card)
-        return { vars = { 0, G.deck and G.deck.config.card_limit or G.GAME.starting_deck_size } }
+        return { vars = { 1, G.deck and G.deck.config.card_limit or G.GAME.starting_deck_size } }
     end,
     check_for_unlock = function(self, args)
         if args.type == 'modify_deck' then
-            return G.deck and G.deck.config.card_limit <= 0
+            return G.deck and G.deck.config.card_limit <= 1
         end
         return false
     end
