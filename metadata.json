@@ -6,7 +6,7 @@
         "Dzhandry"
     ],
     "description": "Mod by Dzhandry that adds new Jokers and other cards!",
-    "prefix": "dzhandrys_jokers",
+    "prefix": "dzhrj",
     "main_file": "main.lua",
     "badge_colour": "3E089C",
     "badge_text_colour": "52E815",

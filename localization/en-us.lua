@@ -1,7 +1,7 @@
 return {
     descriptions = {
         Back = {
-            b_dzhandrys_jokers_x_deck = {
+            b_dzhrj_x_deck = {
                 name = "X Deck",
                 text = {
                     -- post_trigger only works with jokers
@@ -12,13 +12,13 @@ return {
             }
         },
         Joker = {
-            j_dzhandrys_jokers_superior_joker = {
+            j_dzhrj_superior_joker = {
                 name = "Superior Joker",
                 text = {
                     "{X:mult,C:white}X#1# {} Mult"
                 }
             },
-            j_dzhandrys_jokers_superior_greedy_joker = {
+            j_dzhrj_superior_greedy_joker = {
                 name = "Superior Greedy Joker",
                 text = {
                     "Played cards with",
@@ -26,7 +26,7 @@ return {
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhandrys_jokers_superior_lusty_joker = {
+            j_dzhrj_superior_lusty_joker = {
                 name = "Superior Lusty Joker",
                 text = {
                     "Played cards with",
@@ -34,7 +34,7 @@ return {
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhandrys_jokers_superior_wrathful_joker = {
+            j_dzhrj_superior_wrathful_joker = {
                 name = "Superior Wrathful Joker",
                 text = {
                     "Played cards with",
@@ -42,7 +42,7 @@ return {
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhandrys_jokers_superior_gluttonous_joker = {
+            j_dzhrj_superior_gluttonous_joker = {
                 name = "Superior Gluttonous Joker",
                 text = {
                     "Played cards with",
@@ -50,7 +50,7 @@ return {
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhandrys_jokers_superior_jolly_joker = {
+            j_dzhrj_superior_jolly_joker = {
                 name = "Superior Jolly Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
@@ -58,7 +58,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_zany_joker = {
+            j_dzhrj_superior_zany_joker = {
                 name = "Superior Zany Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
@@ -66,7 +66,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_mad_joker = {
+            j_dzhrj_superior_mad_joker = {
                 name = "Superior Mad Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
@@ -74,7 +74,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_crazy_joker = {
+            j_dzhrj_superior_crazy_joker = {
                 name = "Superior Crazy Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
@@ -82,7 +82,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_droll_joker = {
+            j_dzhrj_superior_droll_joker = {
                 name = "Superior Droll Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
@@ -91,7 +91,7 @@ return {
                 },
             },
 
-            j_dzhandrys_jokers_superior_sly_joker = {
+            j_dzhrj_superior_sly_joker = {
                 name = "Superior Sly Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
@@ -99,7 +99,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_wily_joker = {
+            j_dzhrj_superior_wily_joker = {
                 name = "Superior Wily Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
@@ -107,7 +107,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_clever_joker = {
+            j_dzhrj_superior_clever_joker = {
                 name = "Superior Clever Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
@@ -115,7 +115,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_devious_joker = {
+            j_dzhrj_superior_devious_joker = {
                 name = "Superior Devious Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
@@ -123,7 +123,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_crafty_joker = {
+            j_dzhrj_superior_crafty_joker = {
                 name = "Superior Crafty Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
@@ -131,7 +131,7 @@ return {
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhandrys_jokers_superior_half_joker = {
+            j_dzhrj_superior_half_joker = {
                 name = "Superior Half Joker",
                 text = {
                     "Creates a {C:dark_edition}Negative {C:tarot,T:c_hanged_man}The Hanged Man",
@@ -142,24 +142,24 @@ return {
                     "{C:inactive}(Currently {C:attention}#2#{})"
                 },
             },
-            j_dzhandrys_jokers_superior_joker_stencil = {
+            j_dzhrj_superior_joker_stencil = {
                 name = "Superior Joker Stencil",
                 text = {
                     "{X:mult,C:white}X#2#{} Mult per each unused card selection",
                     "{C:inactive}(Minimum {X:mult,C:white}X#3#{C:inactive}, current selection limit: {C:attention}#1#{C:inactive})",
                 },
             },
-            j_dzhandrys_jokers_superior_four_fingers = {
+            j_dzhrj_superior_four_fingers = {
                 name = "Superior Four Fingers",
                 text = {
                     "All hands count as {C:attention}Straight Flush"
                 },
             },
-            j_dzhandrys_jokers_superior_mime = {
+            j_dzhrj_superior_mime = {
                 name = "Superior Mime",
                 text = {
                     "{E:1,X:spades,C:hearts}Double{} all retriggers",
-                    "{C:inactive,s:0.4}(additive :c)"
+                    "{C:inactive,s:0.8}(additive :c)"
                 },
             },
         }

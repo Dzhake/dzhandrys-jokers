@@ -17,7 +17,7 @@ SMODS.Joker {
                 trigger = "before",
                 delay = 0.0,
                 func = function()
-                    local tarot = create_card(nil, G.consumeables, nil, nil, nil, nil, "c_hanged_man", "dzhandrys_jokers")
+                    local tarot = create_card(nil, G.consumeables, nil, nil, nil, nil, "c_hanged_man", "dzhrj")
                     tarot:set_edition({ negative = true }, true)
                     tarot:add_to_deck()
                     G.consumeables:emplace(tarot)
