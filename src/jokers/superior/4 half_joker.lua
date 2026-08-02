@@ -1,5 +1,6 @@
 SMODS.Joker {
     key = "superior_half_joker",
+    attributes = { "superior", "generation", "tarot" },
     unlocked = false,
     blueprint_compat = true,
     atlas = "jokers",
@@ -30,7 +31,7 @@ SMODS.Joker {
     locked_loc_vars = function(self, info_queue, card)
         return { vars = { 0, G.deck and G.deck.config.card_limit or G.GAME.starting_deck_size } }
     end,
-    check_for_unlock = function(self, args) -- equivalent to `unlock_condition = {type = 'c_losses', extra = 5}`
+    check_for_unlock = function(self, args)
         if args.type == 'modify_deck' then
             return G.deck and G.deck.config.card_limit <= 0
         end

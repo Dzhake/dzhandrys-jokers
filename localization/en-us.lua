@@ -153,6 +153,13 @@ return {
                     "All hands count as {C:attention}Straight Flush"
                 },
             },
+            j_dzhandrys_jokers_superior_mime = {
+                name = "Superior Mime",
+                text = {
+                    "Double all retriggers",
+                    "{C:inactive,s:0.8}(multiplicative)"
+                },
+            },
         }
     }
 }

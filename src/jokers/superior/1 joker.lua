@@ -1,5 +1,6 @@
 SMODS.Joker {
     key = "superior_joker",
+    attributes = { "superior", "xmult" },
     blueprint_compat = true,
     atlas = "jokers",
     pos = { x = 0, y = 0 },

@@ -18,6 +18,10 @@ SMODS.Atlas {
     py = 95,
 }
 
+SMODS.Attribute {
+    key = "superior"
+}
+
 local function load_dir(path)
     local items = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. path)
 

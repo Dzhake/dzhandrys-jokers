@@ -1,6 +1,7 @@
 local function basic_xchips_poker_hand_joker(key, pos, xchips, hand)
     SMODS.Joker {
         key = key,
+        attributes = { "superior", "xchips", "hand_type" },
         atlas = "jokers",
         pos = pos,
         rarity = 2,
@@ -23,6 +24,7 @@ end
 local function basic_xmult_poker_hand_joker(key, pos, xmult, hand)
     SMODS.Joker {
         key = key,
+        attributes = { "superior", "xmult", "hand_type" },
         atlas = "jokers",
         pos = pos,
         rarity = 2,

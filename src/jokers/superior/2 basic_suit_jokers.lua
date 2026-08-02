@@ -1,6 +1,7 @@
 local function basic_suit_joker(key, pos, suit)
     SMODS.Joker {
         key = key,
+        attributes = { "superior", "xchips", suit:lower() },
         blueprint_compat = true,
         atlas = "jokers",
         pos = pos,

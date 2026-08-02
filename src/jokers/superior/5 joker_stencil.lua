@@ -1,5 +1,6 @@
 SMODS.Joker {
     key = "superior_joker_stencil",
+    attributes = { "superior", "xmult" },
     blueprint_compat = true,
     atlas = "jokers",
     pos = { x = 2, y = 5 },

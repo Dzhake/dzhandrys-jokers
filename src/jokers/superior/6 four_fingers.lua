@@ -1,5 +1,6 @@
 SMODS.Joker {
     key = "superior_four_fingers",
+    attributes = { "superior", "passive" },
     blueprint_compat = false,
     atlas = "jokers",
     pos = { x = 6, y = 6 },
