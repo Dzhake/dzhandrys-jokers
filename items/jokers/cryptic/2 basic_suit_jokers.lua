@@ -1,9 +1,9 @@
 local function basic_suit_joker(key, pos, suit)
     SMODS.Joker {
         key = key,
-        attributes = { "superior", "xchips", suit:lower() },
+        attributes = { "cryptic", "xchips", suit:lower() },
         blueprint_compat = true,
-        atlas = "jokers",
+        atlas = "cryptic_jokers",
         pos = pos,
         config = {
             extra = {
@@ -12,7 +12,7 @@ local function basic_suit_joker(key, pos, suit)
             }
         },
         rarity = 2,
-        cost = 8,
+        cost = 7,
         loc_vars = function(self, info_queue, card)
             return {
                 vars = {
@@ -31,7 +31,7 @@ local function basic_suit_joker(key, pos, suit)
     }
 end
 
-basic_suit_joker("superior_greedy_joker", { x = 6, y = 1 }, "Diamonds")
-basic_suit_joker("superior_lusty_joker", { x = 7, y = 1 }, "Hearts")
-basic_suit_joker("superior_wrathful_joker", { x = 8, y = 1 }, "Spades")
-basic_suit_joker("superior_gluttonous_joker", { x = 9, y = 1 }, "Clubs")
+basic_suit_joker("cryptic_greedy_joker", { x = 6, y = 1 }, "Diamonds")
+basic_suit_joker("cryptic_lusty_joker", { x = 7, y = 1 }, "Hearts")
+basic_suit_joker("cryptic_wrathful_joker", { x = 8, y = 1 }, "Spades")
+basic_suit_joker("cryptic_gluttonous_joker", { x = 9, y = 1 }, "Clubs")

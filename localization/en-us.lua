@@ -12,78 +12,78 @@ return {
             }
         },
         Joker = {
-            j_dzhrj_superior_joker = {
-                name = "Superior Joker",
+            j_dzhrj_cryptic_joker = {
+                name = "Cryptic Joker",
                 text = {
                     "{X:mult,C:white}X#1# {} Mult"
                 }
             },
-            j_dzhrj_superior_greedy_joker = {
-                name = "Superior Greedy Joker",
+            j_dzhrj_cryptic_greedy_joker = {
+                name = "Cryptic Greedy Joker",
                 text = {
                     "Played cards with",
                     "{C:diamonds}#2#{} suit give",
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhrj_superior_lusty_joker = {
-                name = "Superior Lusty Joker",
+            j_dzhrj_cryptic_lusty_joker = {
+                name = "Cryptic Lusty Joker",
                 text = {
                     "Played cards with",
                     "{C:hearts}#2#{} suit give",
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhrj_superior_wrathful_joker = {
-                name = "Superior Wrathful Joker",
+            j_dzhrj_cryptic_wrathful_joker = {
+                name = "Cryptic Wrathful Joker",
                 text = {
                     "Played cards with",
                     "{C:spades}#2#{} suit give",
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhrj_superior_gluttonous_joker = {
-                name = "Superior Gluttonous Joker",
+            j_dzhrj_cryptic_gluttonous_joker = {
+                name = "Cryptic Gluttonous Joker",
                 text = {
                     "Played cards with",
                     "{C:clubs}#2#{} suit give",
                     "{X:chips,C:white}X#1#{} Chips when scored",
                 }
             },
-            j_dzhrj_superior_jolly_joker = {
-                name = "Superior Jolly Joker",
+            j_dzhrj_cryptic_jolly_joker = {
+                name = "Cryptic Jolly Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_zany_joker = {
-                name = "Superior Zany Joker",
+            j_dzhrj_cryptic_zany_joker = {
+                name = "Cryptic Zany Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_mad_joker = {
-                name = "Superior Mad Joker",
+            j_dzhrj_cryptic_mad_joker = {
+                name = "Cryptic Mad Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_crazy_joker = {
-                name = "Superior Crazy Joker",
+            j_dzhrj_cryptic_crazy_joker = {
+                name = "Cryptic Crazy Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_droll_joker = {
-                name = "Superior Droll Joker",
+            j_dzhrj_cryptic_droll_joker = {
+                name = "Cryptic Droll Joker",
                 text = {
                     "{X:mult,C:white}X#1#{} Mult if played",
                     "hand does {C:red}not contain",
@@ -91,48 +91,48 @@ return {
                 },
             },
 
-            j_dzhrj_superior_sly_joker = {
-                name = "Superior Sly Joker",
+            j_dzhrj_cryptic_sly_joker = {
+                name = "Cryptic Sly Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_wily_joker = {
-                name = "Superior Wily Joker",
+            j_dzhrj_cryptic_wily_joker = {
+                name = "Cryptic Wily Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_clever_joker = {
-                name = "Superior Clever Joker",
+            j_dzhrj_cryptic_clever_joker = {
+                name = "Cryptic Clever Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_devious_joker = {
-                name = "Superior Devious Joker",
+            j_dzhrj_cryptic_devious_joker = {
+                name = "Cryptic Devious Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_crafty_joker = {
-                name = "Superior Crafty Joker",
+            j_dzhrj_cryptic_crafty_joker = {
+                name = "Cryptic Crafty Joker",
                 text = {
                     "{X:chips,C:white}X#1#{} Chips if played",
                     "hand does {C:red}not contain",
                     "a {C:attention}#2#",
                 },
             },
-            j_dzhrj_superior_half_joker = {
-                name = "Superior Half Joker",
+            j_dzhrj_cryptic_half_joker = {
+                name = "Cryptic Half Joker",
                 text = {
                     "Creates a {C:dark_edition}Negative {C:tarot,T:c_hanged_man}The Hanged Man",
                     "when {C:attention}Blind{} is selected",
@@ -142,34 +142,56 @@ return {
                     "{C:inactive}(Currently {C:attention}#2#{C:inactive})"
                 },
             },
-            j_dzhrj_superior_joker_stencil = {
-                name = "Superior Joker Stencil",
+            j_dzhrj_cryptic_joker_stencil = {
+                name = "Cryptic Joker Stencil",
                 text = {
                     "{X:mult,C:white}X#2#{} Mult per each unused card selection",
                     "{C:inactive}(Minimum {X:mult,C:white}X#3#{C:inactive}, current selection limit: {C:attention}#1#{C:inactive})",
                 },
             },
-            j_dzhrj_superior_four_fingers = {
-                name = "Superior Four Fingers",
+            j_dzhrj_cryptic_four_fingers = {
+                name = "Cryptic Four Fingers",
                 text = {
                     "All hands count as {C:attention}Straight Flush"
                 },
             },
-            j_dzhrj_superior_mime = {
-                name = "Superior Mime",
+            j_dzhrj_cryptic_mime = {
+                name = "Cryptic Mime",
                 text = {
                     "{E:1,X:spades,C:hearts}Double{} all retriggers",
                     "{C:inactive,s:0.8}(additive :c)"
                 },
             },
-            j_dzhrj_superior_credit_card = {
-                name = "Superior Credit Card",
+            j_dzhrj_cryptic_credit_card = {
+                name = "Cryptic Credit Card",
                 text = {
                     "Rerolls cost {C:money}$5{} less"
                 },
                 unlock = {
                     "Have {X:money,C:white}$#1#{} or less",
                 },
+            },
+            j_dzhrj_cryptic_ceremonial_dagger = {
+                name = "Cryptic Ceremonial Dagger",
+                text = {
+                    "When blind is selected,",
+                    "sell joker to the right, ignoring Eternal sticker"
+                }
+            },
+            j_dzhrj_cryptic_madness = {
+                name = "Cryptic Madness",
+                text = {
+                    "{C:attention}Eternal{} jokers each give {X:mult,C:white}X#1#{} Mult"
+                }
+            },
+
+            j_dzhrj_p03 = {
+                name = "P03",
+                text = {
+                    "Gain {C:attention}+#2#{} hand size after play or discard,",
+                    "resets to {C:attention}+#3#{} when blind is selected",
+                    "{C:inactive}(Currently {C:attention}+#1#{C:inactive} hand size)"
+                }
             }
         }
     }

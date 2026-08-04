@@ -1,3 +1,3 @@
 SMODS.Attribute {
-    key = "superior"
+    key = "cryptic"
 }

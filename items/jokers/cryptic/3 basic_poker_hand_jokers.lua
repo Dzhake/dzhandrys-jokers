@@ -1,12 +1,12 @@
 local function basic_xchips_poker_hand_joker(key, pos, xchips, hand)
     SMODS.Joker {
         key = key,
-        attributes = { "superior", "xchips", "hand_type" },
-        atlas = "jokers",
+        attributes = { "cryptic", "xchips", "hand_type" },
+        atlas = "cryptic_jokers",
         pos = pos,
         rarity = 2,
         blueprint_compat = true,
-        cost = 8,
+        cost = 7,
         config = { extra = { xchips = xchips, hand = hand }, },
         loc_vars = function(self, info_queue, card)
             return { vars = { card.ability.extra.xchips, localize(card.ability.extra.hand, 'poker_hands') } }
@@ -24,8 +24,8 @@ end
 local function basic_xmult_poker_hand_joker(key, pos, xmult, hand)
     SMODS.Joker {
         key = key,
-        attributes = { "superior", "xmult", "hand_type" },
-        atlas = "jokers",
+        attributes = { "cryptic", "xmult", "hand_type" },
+        atlas = "cryptic_jokers",
         pos = pos,
         rarity = 2,
         blueprint_compat = true,
@@ -44,14 +44,14 @@ local function basic_xmult_poker_hand_joker(key, pos, xmult, hand)
     }
 end
 
-basic_xmult_poker_hand_joker("superior_jolly_joker", { x = 2, y = 0 }, 3.5, "Pair")
-basic_xmult_poker_hand_joker("superior_zany_joker", { x = 3, y = 0 }, 2.5, "Three of a Kind")
-basic_xmult_poker_hand_joker("superior_mad_joker", { x = 4, y = 0 }, 2.5, "Two Pair")
-basic_xmult_poker_hand_joker("superior_crazy_joker", { x = 5, y = 0 }, 2, "Straight")
-basic_xmult_poker_hand_joker("superior_droll_joker", { x = 6, y = 0 }, 1.5, "Flush")
+basic_xmult_poker_hand_joker("cryptic_jolly_joker", { x = 2, y = 0 }, 3.5, "Pair")
+basic_xmult_poker_hand_joker("cryptic_zany_joker", { x = 3, y = 0 }, 2.5, "Three of a Kind")
+basic_xmult_poker_hand_joker("cryptic_mad_joker", { x = 4, y = 0 }, 2.5, "Two Pair")
+basic_xmult_poker_hand_joker("cryptic_crazy_joker", { x = 5, y = 0 }, 2, "Straight")
+basic_xmult_poker_hand_joker("cryptic_droll_joker", { x = 6, y = 0 }, 1.5, "Flush")
 
-basic_xchips_poker_hand_joker("superior_sly_joker", { x = 0, y = 14 }, 3.5, "Pair")
-basic_xchips_poker_hand_joker("superior_wily_joker", { x = 1, y = 14 }, 2.5, "Three of a Kind")
-basic_xchips_poker_hand_joker("superior_clever_joker", { x = 2, y = 14 }, 2.5, "Two Pair")
-basic_xchips_poker_hand_joker("superior_devious_joker", { x = 3, y = 14 }, 2, "Straight")
-basic_xchips_poker_hand_joker("superior_crafty_joker", { x = 4, y = 14 }, 1.5, "Flush")
+basic_xchips_poker_hand_joker("cryptic_sly_joker", { x = 0, y = 14 }, 3.5, "Pair")
+basic_xchips_poker_hand_joker("cryptic_wily_joker", { x = 1, y = 14 }, 2.5, "Three of a Kind")
+basic_xchips_poker_hand_joker("cryptic_clever_joker", { x = 2, y = 14 }, 2.5, "Two Pair")
+basic_xchips_poker_hand_joker("cryptic_devious_joker", { x = 3, y = 14 }, 2, "Straight")
+basic_xchips_poker_hand_joker("cryptic_crafty_joker", { x = 4, y = 14 }, 1.5, "Flush")

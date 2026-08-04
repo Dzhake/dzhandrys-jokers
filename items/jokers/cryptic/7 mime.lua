@@ -1,8 +1,8 @@
 SMODS.Joker {
-    key = "superior_mime",
-    attributes = { "superior", "retrigger" },
+    key = "cryptic_mime",
+    attributes = { "cryptic", "retrigger" },
     blueprint_compat = true,
-    atlas = "jokers",
+    atlas = "cryptic_jokers",
     pos = { x = 4, y = 1 },
     rarity = 3,
     cost = 15,

@@ -1,16 +1,17 @@
 SMODS.Joker {
-    key = "superior_joker",
-    attributes = { "superior", "xmult" },
+    key = "cryptic_madness",
+    attributes = { "cryptic", "xmult", "joker" },
     blueprint_compat = true,
-    atlas = "jokers",
-    pos = { x = 0, y = 0 },
+    perishable_compat = false,
+    atlas = "cryptic_jokers",
+    pos = { x = 8, y = 11 },
     config = {
         extra = {
             xmult = 2,
         }
     },
     rarity = 2,
-    cost = 8,
+    cost = 6,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -19,9 +20,9 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.joker_main then
+        if context.other_joker and SMODS.is_eternal(context.other_joker) then
             return {
-                Xmult = card.ability.extra.xmult
+                xmult = card.ability.extra.xmult
             }
         end
     end,

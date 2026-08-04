@@ -1,15 +1,15 @@
 SMODS.Joker {
-    key = "superior_four_fingers",
-    attributes = { "superior", "passive" },
+    key = "cryptic_four_fingers",
+    attributes = { "cryptic", "passive" },
     blueprint_compat = false,
-    atlas = "jokers",
+    atlas = "cryptic_jokers",
     pos = { x = 6, y = 6 },
     config = {
         extra = {
         }
     },
-    rarity = 3,
-    cost = 10,
+    rarity = 2,
+    cost = 8,
     calculate = function(self, card, context)
         if context.evaluate_poker_hand then
             local poker_hands_names = { "Straight Flush", "Straight", "Flush", "High Card" }

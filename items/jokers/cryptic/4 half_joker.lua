@@ -1,11 +1,11 @@
 SMODS.Joker {
-    key = "superior_half_joker",
-    attributes = { "superior", "generation", "tarot" },
+    key = "cryptic_half_joker",
+    attributes = { "cryptic", "generation", "tarot" },
     unlocked = false,
     blueprint_compat = true,
-    atlas = "jokers",
+    atlas = "cryptic_jokers",
     pos = { x = 7, y = 0 },
-    pixel_size = { h = 95 / 1.7 },
+    --pixel_size = { h = 95 / 1.7 },
     rarity = 3,
     cost = 10,
     loc_vars = function(self, info_queue, card)

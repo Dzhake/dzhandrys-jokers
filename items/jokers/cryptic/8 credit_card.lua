@@ -1,9 +1,9 @@
 SMODS.Joker {
-    key = "superior_credit_card",
-    attributes = { "superior", "economy" },
+    key = "cryptic_credit_card",
+    attributes = { "cryptic", "economy" },
     unlocked = false,
     blueprint_compat = false,
-    atlas = "jokers",
+    atlas = "cryptic_jokers",
     pos = { x = 5, y = 1 },
     rarity = 1,
     cost = 2,
