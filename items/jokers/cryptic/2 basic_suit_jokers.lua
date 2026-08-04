@@ -21,8 +21,8 @@ local function basic_suit_joker(key, pos, suit)
             }
         end,
         calculate = function(self, card, context)
-            if context.individual and context.cardarea == G.play and
-                context.other_card:is_suit(card.ability.extra.suit) then
+            if (context.individual and context.cardarea == G.play and
+                    context.other_card:is_suit(card.ability.extra.suit)) or context.forcetrigger then
                 return {
                     xchips = card.ability.extra.xchips
                 }

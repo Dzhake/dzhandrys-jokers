@@ -1,14 +1,13 @@
 SMODS.Joker {
     key = "cryptic_ceremonial_dagger",
     attributes = { "cryptic", "joker" },
-    blueprint_compat = true,
-    perishable_compat = false,
+    blueprint_compat = false,
     atlas = "cryptic_jokers",
     pos = { x = 5, y = 5 },
     rarity = 2,
     cost = 6,
     calculate = function(self, card, context)
-        if context.setting_blind and not context.blueprint then
+        if (context.setting_blind or context.forcetrigger) and not context.blueprint then
             local my_pos = nil
             local area = card.area
             for i = 1, #area.cards do

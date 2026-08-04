@@ -12,7 +12,7 @@ SMODS.Joker {
         info_queue[#info_queue + 1] = { key = 'e_negative_consumable', set = 'Edition', config = { extra = 1 } }
     end,
     calculate = function(self, card, context)
-        if context.setting_blind then
+        if context.setting_blind or context.forcetrigger then
             G.E_MANAGER:add_event(Event({
                 trigger = "before",
                 delay = 0.0,

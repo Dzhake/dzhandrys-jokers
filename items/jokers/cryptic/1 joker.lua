@@ -19,7 +19,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.joker_main then
+        if context.joker_main or context.forcetrigger then
             return {
                 xmult = card.ability.extra.xmult
             }

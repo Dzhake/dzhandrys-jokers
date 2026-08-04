@@ -2,7 +2,6 @@ SMODS.Joker {
     key = "cryptic_madness",
     attributes = { "cryptic", "xmult", "joker" },
     blueprint_compat = true,
-    perishable_compat = false,
     atlas = "cryptic_jokers",
     pos = { x = 8, y = 11 },
     config = {
@@ -20,7 +19,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.other_joker and SMODS.is_eternal(context.other_joker) then
+        if context.other_joker and SMODS.is_eternal(context.other_joker) or context.forcetrigger then
             return {
                 xmult = card.ability.extra.xmult
             }

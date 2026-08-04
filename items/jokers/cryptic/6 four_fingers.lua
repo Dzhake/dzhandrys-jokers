@@ -2,6 +2,7 @@ SMODS.Joker {
     key = "cryptic_four_fingers",
     attributes = { "cryptic", "passive" },
     blueprint_compat = false,
+    demicoloncompat = false,
     atlas = "cryptic_jokers",
     pos = { x = 6, y = 6 },
     config = {

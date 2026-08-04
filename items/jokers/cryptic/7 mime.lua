@@ -2,6 +2,7 @@ SMODS.Joker {
     key = "cryptic_mime",
     attributes = { "cryptic", "retrigger" },
     blueprint_compat = true,
+    demicoloncompat = false,
     atlas = "cryptic_jokers",
     pos = { x = 4, y = 1 },
     rarity = 3,

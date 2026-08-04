@@ -3,6 +3,7 @@ SMODS.Joker {
     attributes = { "cryptic", "economy" },
     unlocked = false,
     blueprint_compat = false,
+    demicoloncompat = false,
     atlas = "cryptic_jokers",
     pos = { x = 5, y = 1 },
     rarity = 1,

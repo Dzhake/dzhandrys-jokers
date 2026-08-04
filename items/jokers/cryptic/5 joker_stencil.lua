@@ -20,7 +20,7 @@ SMODS.Joker {
         }
     end,
     calculate = function(self, card, context)
-        if context.joker_main then
+        if context.joker_main or context.forcetrigger then
             return {
                 xmult = math.max(G.GAME.starting_params.play_limit -
                     #context.full_hand * card.ability.extra.xmult_per_card, card.ability.extra.xmult_min)

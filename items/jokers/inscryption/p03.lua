@@ -43,7 +43,7 @@ SMODS.Joker {
             }
         end
 
-        if context.after or context.pre_discard then
+        if context.after or context.pre_discard or context.forcetrigger then
             local size_diff = card.ability.extra.hand_size_mod
             return {
                 message = localize { type = "variable", key = "a_chips", vars = { size_diff } },

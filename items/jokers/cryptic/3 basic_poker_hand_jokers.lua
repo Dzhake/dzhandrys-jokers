@@ -12,7 +12,7 @@ local function basic_xchips_poker_hand_joker(key, pos, xchips, hand)
             return { vars = { card.ability.extra.xchips, localize(card.ability.extra.hand, 'poker_hands') } }
         end,
         calculate = function(self, card, context)
-            if context.joker_main and not next(context.poker_hands[card.ability.extra.hand]) then
+            if (context.joker_main and not next(context.poker_hands[card.ability.extra.hand])) or context.forcetrigger then
                 return {
                     xchips = card.ability.extra.xchips
                 }
@@ -35,7 +35,7 @@ local function basic_xmult_poker_hand_joker(key, pos, xmult, hand)
             return { vars = { card.ability.extra.xmult, localize(card.ability.extra.hand, 'poker_hands') } }
         end,
         calculate = function(self, card, context)
-            if context.joker_main and not next(context.poker_hands[card.ability.extra.hand]) then
+            if (context.joker_main and not next(context.poker_hands[card.ability.extra.hand])) or context.forcetrigger then
                 return {
                     xmult = card.ability.extra.xmult
                 }
