@@ -44,15 +44,21 @@ SMODS.Joker {
         end
 
         if context.after or context.pre_discard or context.forcetrigger then
-            local size_diff = card.ability.extra.hand_size_mod
             return {
-                message = localize { type = "variable", key = "a_chips", vars = { size_diff } },
-                colour = G.C.FILTER,
                 func = function()
                     G.E_MANAGER:add_event(Event({
                         func = function()
+                            local prev_hand_size = card.ability.extra.hand_size
+                            SMODS.scale_card(card, {
+                                ref_table = card.ability.extra,
+                                ref_value = "hand_size",
+                                scalar_value = "hand_size_mod",
+                                message_key = "a_chips",
+                                colour = G.C.FILTER,
+                            })
+                            local new_hand_size = card.ability.extra.hand_size
+                            local size_diff = new_hand_size - prev_hand_size
                             G.hand:change_size(size_diff)
-                            card.ability.extra.hand_size = card.ability.extra.hand_size + size_diff
                             return true
                         end
                     }))

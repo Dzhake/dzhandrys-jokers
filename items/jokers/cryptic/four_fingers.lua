@@ -3,12 +3,9 @@ SMODS.Joker {
     attributes = { "cryptic", "passive" },
     blueprint_compat = false,
     demicoloncompat = false,
+    immutable = true,
     atlas = "cryptic_jokers",
     pos = { x = 6, y = 6 },
-    config = {
-        extra = {
-        }
-    },
     rarity = 2,
     cost = 8,
     calculate = function(self, card, context)

@@ -174,8 +174,16 @@ return {
             j_dzhrj_cryptic_ceremonial_dagger = {
                 name = "Cryptic Ceremonial Dagger",
                 text = {
-                    "When blind is selected,",
-                    "sell joker to the right, ignoring Eternal sticker"
+                    "When blind is selected, sell joker to the right,",
+                    "ignoring Eternal sticker"
+                }
+            },
+            j_dzhrj_cryptic_ceremonial_dagger_upgraded = {
+                name = "Cryptic Ceremonial Dagger",
+                text = {
+                    "When blind is selected, sell joker to the right",
+                    "for {X:money,C:white}X#1#{} its sell value,",
+                    "ignoring Eternal sticker,"
                 }
             },
             j_dzhrj_cryptic_madness = {
