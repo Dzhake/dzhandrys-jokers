@@ -2,10 +2,10 @@ SMODS.Joker {
     key = "p03",
     attributes = { "scaling", "reset", "hands", "discards", "hand_size" },
     blueprint_compat = false,
-    atlas = "inscryption",
-    pos = { x = 0, y = 0 },
-    soul_atlas = "inscryption",
-    soul_pos = { x = 1, y = 0 },
+    atlas = "jokers",
+    pos = { x = 5, y = 0 },
+    soul_atlas = "jokers",
+    soul_pos = { x = 6, y = 0 },
     config = {
         extra = {
             hand_size = 1,

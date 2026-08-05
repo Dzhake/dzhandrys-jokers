@@ -2,7 +2,9 @@ SMODS.Joker {
     key = "cryptic_ceremonial_dagger",
     attributes = { "cryptic", "joker" },
     blueprint_compat = false,
+    perishable_compat = false,
     atlas = "jokers",
+    -- if changing pos, search for "POS" in this file
     pos = { x = 0, y = 0 },
     rarity = 2,
     cost = 6,
@@ -28,7 +30,7 @@ SMODS.Joker {
         G.E_MANAGER:add_event(Event({
             func = function()
                 local x = math.floor(math.max(math.min(card.ability.extra.jokers_sold, 3), 0))
-                card.children.center:set_sprite_pos({ x = x, y = 0 })
+                card.children.center:set_sprite_pos({ x = x, y = 0 }) -- POS
                 return true
             end
         }))
@@ -51,31 +53,47 @@ SMODS.Joker {
                 G.GAME.joker_buffer = G.GAME.joker_buffer - 1
                 return {
                     func = function()
+                        G.GAME.joker_buffer = 0
                         local sell_cost = sliced_card.sell_cost * card.ability.extra.value_mult
                         sliced_card.sell_cost = sell_cost
                         G.FUNCS.sell_card({ config = { ref_table = sliced_card } })
-                        G.GAME.joker_buffer = 0
                         if card.ability.extra.jokers_sold < card.ability.extra.jokers_sold_max then
+                            card.ability.extra.jokers_sold = card.ability.extra.jokers_sold + 1
                             G.E_MANAGER:add_event(Event({
+                                blocking = false,
                                 func = function()
-                                    SMODS.scale_card(card, {
-                                        ref_table = card.ability.extra,
-                                        ref_value = "value_mult",
-                                        scalar_value = "value_mult_mod",
-                                        scaling_message = {
-                                            message = localize('$') .. sell_cost,
-                                            colour = G.C.MONEY,
-                                            card = self
-                                        },
-                                    })
                                     card:juice_up(0.8, 0.8)
-                                    card.ability.extra.jokers_sold = card.ability.extra.jokers_sold + 1
                                     local x = math.floor(math.max(math.min(card.ability.extra.jokers_sold, 3), 0))
-                                    card.children.center:set_sprite_pos({ x = x, y = 0 })
+                                    card.children.center:set_sprite_pos({ x = x, y = 0 }) -- POS
                                     return true
                                 end
                             }))
+                            SMODS.scale_card(card, {
+                                ref_table = card.ability.extra,
+                                ref_value = "value_mult",
+                                scalar_value = "value_mult_mod",
+                                scaling_message = {
+                                    message = localize('$') .. sell_cost,
+                                    colour = G.C.MONEY,
+                                    card = self
+                                },
+                            })
+                            return true
+                        else
+                            G.E_MANAGER:add_event(Event({
+                                blocking = false,
+                                func = function()
+                                    card:juice_up(0.8, 0.8)
+                                    return true
+                                end
+                            }))
+                            SMODS.calculate_effect({
+                                message = localize('$') .. sell_cost,
+                                colour = G.C.MONEY,
+                                card = self
+                            }, card)
                         end
+
                         return true
                     end
                 }

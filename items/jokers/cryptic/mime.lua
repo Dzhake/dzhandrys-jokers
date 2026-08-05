@@ -5,7 +5,7 @@ SMODS.Joker {
     demicoloncompat = false,
     immutable = true,
     atlas = "cryptic_jokers",
-    pos = { x = 4, y = 1 },
+    pos = { x = 7, y = 0 },
     rarity = 3,
     cost = 15,
     calculate = function(self, card, context)
