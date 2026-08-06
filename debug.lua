@@ -1,6 +1,6 @@
 local mod_id = "dzhandrys_jokers"
 SMODS.Keybind {
-    key_pressed = '1',
+    key_pressed = '4',
     held_keys = { 'lctrl' },
     action = function()
         local mod = SMODS.find_mod(mod_id)[1]

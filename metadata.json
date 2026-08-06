@@ -12,6 +12,7 @@
     "badge_text_colour": "52E815",
     "icon_path": "icon.png",
     "dependencies": [
-        "Lovely (>=0.6)"
+        "Lovely (>=0.9)",
+        "Amulet (>=3.5.5)"
     ]
 }

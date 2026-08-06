@@ -69,10 +69,31 @@ return {
                     "{C:green}#2# in #3#{} chance this",
                     "card is destroyed",
                     "at end of round",
-                    "{C:inactive,s:0.8}(requires Cavendish to self-destruct this run to be able to spawn)",
+                    "{C:inactive,s:0.8}(Requires Cavendish to self-destruct this run",
+                    "{C:inactive,s:0.8}to be able to spawn)"
                 },
                 unlock = {
                     "Destroy {C:attention}Cavendish{} via it's effect."
+                }
+            },
+            j_dzhrj_cryptic_cavendish_secret = {
+                name = "??????",
+                text = {
+                    "if you're seeing this, something is wrong xd",
+                },
+                unlock = {
+                    "Come back when you unlock more jokers"
+                }
+            },
+            j_dzhrj_cryptic_cavendish = {
+                name = "Cryptic Cavendish",
+                text = {
+                    "{X:talisman_emult,C:white}^#1#{} Mult",
+                    "{C:inactive,s:0.8}(Requires Cryptic Gros Michel to be destroyed in any way",
+                    "{C:inactive,s:0.8}but self-destruct this run to be able to spawn)",
+                },
+                unlock = {
+                    "{C:red}Destroy {C:attention}Cryptic Gros Michel{C:inactive} (not via its effect)",
                 }
             },
 
