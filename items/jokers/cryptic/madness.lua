@@ -25,4 +25,14 @@ SMODS.Joker {
             }
         end
     end,
+    in_pool = function(self, args)
+        local area = G.jokers
+        for i = 1, #area.cards do
+            local card = area.cards[i]
+            if card.ability and SMODS.is_eternal(card, {}) then
+                return true
+            end
+        end
+        return false
+    end,
 }
