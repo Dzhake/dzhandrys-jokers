@@ -62,6 +62,19 @@ return {
                     "All probabilities are {C:green,E:1,S:1.1}guaranteed"
                 }
             },
+            j_dzhrj_cryptic_gros_michel = {
+                name = "Cryptic Gros Michel",
+                text = {
+                    "{X:mult,C:white}X#1#{} Mult",
+                    "{C:green}#2# in #3#{} chance this",
+                    "card is destroyed",
+                    "at end of round",
+                    "{C:inactive,s:0.8}(requires Cavendish to self-destruct this run to be able to spawn)",
+                },
+                unlock = {
+                    "Destroy {C:attention}Cavendish{} via it's effect."
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",

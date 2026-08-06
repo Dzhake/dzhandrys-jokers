@@ -1,3 +1,5 @@
+assert(SMODS.current_mod.lovely, "Lovely patches were not loaded! Make sure your mod is in the right place.")
+
 SMODS.current_mod.optional_features = {
     --quantum_enhancements = true,
     --object_weights = true,
