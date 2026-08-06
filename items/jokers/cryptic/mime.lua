@@ -4,7 +4,7 @@ SMODS.Joker {
     blueprint_compat = true,
     demicoloncompat = false,
     immutable = true,
-    atlas = "cryptic_jokers",
+    atlas = "jokers",
     pos = { x = 7, y = 0 },
     rarity = 3,
     cost = 15,

@@ -2,8 +2,8 @@ SMODS.Joker {
     key = "cryptic_joker_stencil",
     attributes = { "cryptic", "xmult" },
     blueprint_compat = true,
-    atlas = "cryptic_jokers",
-    pos = { x = 2, y = 5 },
+    atlas = "jokers",
+    pos = { x = 9, y = 0 },
     config = {
         extra = {
             xmult_per_card = 1,

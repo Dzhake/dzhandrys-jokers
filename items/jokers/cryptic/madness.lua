@@ -2,8 +2,8 @@ SMODS.Joker {
     key = "cryptic_madness",
     attributes = { "cryptic", "xmult", "joker" },
     blueprint_compat = true,
-    atlas = "cryptic_jokers",
-    pos = { x = 8, y = 11 },
+    atlas = "jokers",
+    pos = { x = 8, y = 0 },
     config = {
         extra = {
             xmult = 2,
