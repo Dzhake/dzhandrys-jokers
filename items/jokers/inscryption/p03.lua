@@ -56,7 +56,7 @@ SMODS.Joker {
                                 message_key = "a_chips",
                                 colour = G.C.FILTER,
                             })
-                            local new_hand_size = card.ability.extra.hand_size
+                            local new_hand_size = math.min(card.ability.extra.hand_size, 1000)
                             local size_diff = new_hand_size - prev_hand_size
                             G.hand:change_size(size_diff)
                             return true

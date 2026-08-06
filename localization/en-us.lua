@@ -56,6 +56,12 @@ return {
                     "{C:attention}Eternal{} jokers each give {X:mult,C:white}X#1#{} Mult"
                 }
             },
+            j_dzhrj_cryptic_oops = {
+                name = "Oops! All NaN",
+                text = {
+                    "All probabilities are {C:green,E:1,S:1.1}guaranteed"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
