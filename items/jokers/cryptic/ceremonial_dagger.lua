@@ -1,11 +1,11 @@
 SMODS.Joker {
     key = "cryptic_ceremonial_dagger",
     attributes = { "cryptic", "joker" },
-    blueprint_compat = false,
-    perishable_compat = false,
     atlas = "jokers",
     -- if changing pos, search for "POS" in this file
     pos = { x = 0, y = 0 },
+    blueprint_compat = false,
+    perishable_compat = false,
     rarity = 2,
     cost = 6,
     config = {

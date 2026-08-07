@@ -1,17 +1,18 @@
 SMODS.Joker {
     key = "cryptic_joker_stencil",
     attributes = { "cryptic", "xmult" },
-    blueprint_compat = true,
     atlas = "jokers",
     pos = { x = 9, y = 0 },
+    blueprint_compat = true,
+    demicoloncompat = true,
+    rarity = 3,
+    cost = 9,
     config = {
         extra = {
             xmult_per_card = 1,
             xmult_min = 1,
         }
     },
-    rarity = 3,
-    cost = 9,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {

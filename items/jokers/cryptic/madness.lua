@@ -1,16 +1,16 @@
 SMODS.Joker {
     key = "cryptic_madness",
     attributes = { "cryptic", "xmult", "joker" },
-    blueprint_compat = true,
     atlas = "jokers",
     pos = { x = 8, y = 0 },
+    blueprint_compat = true,
+    rarity = 2,
+    cost = 6,
     config = {
         extra = {
             xmult = 2,
         }
     },
-    rarity = 2,
-    cost = 6,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {

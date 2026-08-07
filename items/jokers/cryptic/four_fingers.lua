@@ -1,11 +1,11 @@
 SMODS.Joker {
     key = "cryptic_four_fingers",
     attributes = { "cryptic", "passive" },
+    atlas = "jokers",
+    pos = { x = 4, y = 0 },
     blueprint_compat = false,
     demicoloncompat = false,
     immutable = true,
-    atlas = "jokers",
-    pos = { x = 4, y = 0 },
     rarity = 2,
     cost = 8,
     calculate = function(self, card, context)
