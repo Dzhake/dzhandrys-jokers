@@ -7,7 +7,7 @@ SMODS.Joker {
     demicoloncompat = false,
     immutable = true,
     rarity = 2,
-    cost = 8,
+    cost = 7,
     calculate = function(self, card, context)
         if context.evaluate_poker_hand then
             local poker_hands_names = { "Straight Flush", "Straight", "Flush", "High Card" }
