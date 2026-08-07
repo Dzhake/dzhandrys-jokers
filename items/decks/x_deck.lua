@@ -1,4 +1,4 @@
-SMODS.Back {
+--[[SMODS.Back {
     key = "x_deck",
     atlas = "decks",
     pos = { x = 0, y = 0 },
@@ -17,3 +17,5 @@ SMODS.Back {
         end
     end
 }
+]]
+-- negative mult is kinda buggy also this only works with jokers which is not cool and i'm too lazy to learn how to make it work for any +mult/xmult
