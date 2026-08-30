@@ -96,6 +96,14 @@ return {
                     "{C:red}Destroy {C:attention}Cryptic Gros Michel{C:inactive} (not via its effect)",
                 }
             },
+            j_dzhrj_cryptic_vagabond = {
+                name = "Cryptic Vagabond",
+                text = {
+                    "Create a {C:spectral}Spectral{} card",
+                    "if hand is played",
+                    "with {C:money}$#1#{} or less",
+                },
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
