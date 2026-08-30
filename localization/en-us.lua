@@ -104,7 +104,14 @@ return {
                     "resets to {C:attention}+#3#{} when blind is selected",
                     "{C:inactive}(Currently {C:attention}+#1#{C:inactive} hand size)"
                 }
-            }
+            },
+            j_dzhrj_martin = {
+                name = "Martin of Martins",
+                text = {
+                    "Cards scored last round appear on top of the deck",
+                    "{C:inactive}(Dance of Cards is a really cool game)"
+                }
+            },
         }
     }
 }

@@ -59,4 +59,4 @@ SMODS.Joker {
     end
 }
 
--- see lovely/patches.toml
+-- see lovely/cryptic_gros_michel.toml
