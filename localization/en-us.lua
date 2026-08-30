@@ -104,6 +104,15 @@ return {
                     "with {C:money}$#1#{} or less",
                 },
             },
+            j_dzhrj_cryptic_rocket = {
+                name = "Cryptic Rocket",
+                text = {
+                    "Upgrade all poker hands by {C:planet}#1#{}",
+                    "level at end of round.",
+                    "Upgrade amount increases by {C:planet}#2#{}",
+                    "when {C:attention}Boss Blind{} is defeated",
+                },
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
