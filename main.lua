@@ -24,7 +24,7 @@ end
 
 
 -- IMPORTANT: comment this line when sharing the mod!
-assert(SMODS.load_file("debug.lua"))()
+--assert(SMODS.load_file("debug.lua"))()
 
 
 load_dir("main")

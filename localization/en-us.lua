@@ -113,6 +113,13 @@ return {
                     "when {C:attention}Boss Blind{} is defeated",
                 },
             },
+            j_dzhrj_cryptic_shortcut = {
+                name = "Cryptic Shortcut",
+                text = {
+                    "When drawing cards, if your hand doesn't",
+                    "contain a {C:attention}Straight{}, gain {C:red}+1{} discard"
+                },
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",

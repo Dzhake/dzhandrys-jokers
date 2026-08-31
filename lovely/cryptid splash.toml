@@ -1,0 +1,19 @@
+[manifest] # Header for the file, this should only be here once at the beginning
+version = "1.0.0"
+priority = 0      # Priority for loading the file
+
+# Replace all cards on splash screen with cryptid for funnies
+# Game:splash_screen()
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
+card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
+card_size*G.CARD_W, card_size*G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)'''
+position = "at"
+payload = '''
+local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
+card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
+card_size*G.CARD_W, card_size*G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])
+'''
+match_indent = true
