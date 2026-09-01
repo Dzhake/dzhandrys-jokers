@@ -116,8 +116,9 @@ return {
             j_dzhrj_cryptic_shortcut = {
                 name = "Cryptic Shortcut",
                 text = {
-                    "When drawing cards, if your hand doesn't",
-                    "contain a {C:attention}Straight{}, gain {C:red}+1{} discard"
+                    "After drawing cards with no discards left,",
+                    "if your hand doesn't contain a {C:attention}Straight{},",
+                    "gain {C:red}+1{} discard"
                 },
             },
 

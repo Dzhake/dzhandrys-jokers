@@ -1,4 +1,4 @@
-SMODS.Joker {
+--[[SMODS.Joker {
     key = "cryptic_hack",
     attributes = { "cryptic", "retrigger", "rank", "two", "three", "four", "five", "face" },
     atlas = "jokers",
@@ -12,5 +12,5 @@ SMODS.Joker {
 
     end
 }
-
+]]
 -- eval_card hook in main/hooks.lua

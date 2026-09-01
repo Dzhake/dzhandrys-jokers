@@ -11,12 +11,12 @@ SMODS.Joker {
         return { vars = { card.ability.extra.discards } }
     end,
     calculate = function(self, card, context)
-        if context.drawing_cards and not context.blueprint and not next(evaluate_poker_hand(G.hand.cards)['Straight']) then
+        if context.hand_drawn and G.GAME.current_round.discards_left < 1 and not context.blueprint and not next(evaluate_poker_hand(G.hand.cards)['Straight']) then
             G.E_MANAGER:add_event(Event({
                 func = function()
                     ease_discard(card.ability.extra.discards, nil, true)
                     SMODS.calculate_effect({
-                        message = localize { type = 'variable', key = 'a_chips', vars = { card.ability.extra.hands } },
+                        message = localize { type = 'variable', key = 'a_chips', vars = { card.ability.extra.discards } },
                         colour = G.C.RED,
                     }, card)
 
