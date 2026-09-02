@@ -10,10 +10,24 @@ target = "game.lua"
 pattern = '''local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
 card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
 card_size*G.CARD_W, card_size*G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)'''
+
 position = "at"
+
 payload = '''
 local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
 card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
 card_size*G.CARD_W, card_size*G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])
 '''
+match_indent = true
+
+# Replace card on screen wipe with cryptid (for funnies)
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)'''
+
+position = "at"
+
+payload = '''G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])'''
+
 match_indent = true

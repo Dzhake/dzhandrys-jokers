@@ -121,6 +121,13 @@ return {
                     "gain {C:red}+1{} discard"
                 },
             },
+            j_dzhrj_icon = {
+                name = "Icon",
+                text = {
+                    "First {C:attention}King{} held in hand",
+                    "gives {X:mult,C:white}X#1#{} Mult when scored"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
