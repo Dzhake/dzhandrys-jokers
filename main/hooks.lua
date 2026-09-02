@@ -2,7 +2,7 @@ local ref_eval_card = eval_card
 function eval_card(card, context)
     if not card then return end
     local g, post = ref_eval_card(card, context)
-    if G._dzhrj_calculating_bonus_retriggers or not card:can_calculate(context.ignore_debuff, context.remove_playing_cards or context.joker_type_destroyed) then
+    if G._dzhrj_calculating_bonus_retriggers then
         return
             g, post
     end
