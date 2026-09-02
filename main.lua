@@ -23,10 +23,6 @@ local function load_dir(path)
 end
 
 
--- IMPORTANT: comment this line when sharing the mod!
---assert(SMODS.load_file("debug.lua"))()
-
-
 load_dir("main")
 load_dir("items")
 
