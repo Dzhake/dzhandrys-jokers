@@ -1,6 +1,6 @@
 SMODS.Joker {
     key = "cryptic_mime",
-    attributes = { "cryptic", "retrigger" },
+    attributes = { "cryptic", "retrigger", "passive" },
     atlas = "jokers",
     pos = { x = 7, y = 0 },
     blueprint_compat = true,
@@ -9,8 +9,10 @@ SMODS.Joker {
     rarity = 3,
     cost = 15,
     calculate = function(self, card, context)
-        if context.dzhrj_bonus_retriggers then
-            return { dzhrj_do_bonus_retrigger = true }
+        if context.dzhrj_mod_retriggers then
+            return {
+                dzhrj_retriggers_mult = context.dzhrj_retriggers_mult + 1
+            }
         end
     end
 }

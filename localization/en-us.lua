@@ -29,7 +29,7 @@ return {
                 name = "Cryptic Mime",
                 text = {
                     "{E:1,X:spades,C:hearts}Double{} all retriggers",
-                    "{C:inactive,s:0.8}(additive :c)"
+                    --"{C:inactive,s:0.8}(additive :c)"
                 },
             },
             j_dzhrj_cryptic_ceremonial_dagger = {
@@ -126,6 +126,13 @@ return {
                 text = {
                     "First {C:attention}King{} held in hand",
                     "gives {X:mult,C:white}X#1#{} Mult when scored"
+                }
+            },
+            j_dzhrj_hanged_chad = {
+                name = "Hanged Chad",
+                text = {
+                    "Retrigger playing card {C:red}removal{} effects twice",
+                    "{C:inactive}(e.g. destroy, shatter)"
                 }
             },
 
