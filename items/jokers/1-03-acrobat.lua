@@ -24,5 +24,3 @@ SMODS.Joker {
         end
     end
 }
-
--- eval_card hook in main/hooks.lua

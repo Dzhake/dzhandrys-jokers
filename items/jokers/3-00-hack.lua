@@ -13,4 +13,10 @@
     end
 }
 ]]
--- eval_card hook in main/hooks.lua
+
+--[[
+Retrigger each played face card 1 (number) time per 2, 3, 4 or 5 played. (subtext: "I can't believe I have to explain this..") (like you have to explain 'hack' jokes to 'face' cards, get it?)
+
+
+need to come up with the art
+]]

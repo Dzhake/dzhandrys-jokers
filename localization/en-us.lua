@@ -141,6 +141,13 @@ return {
                     "Retrigger last card held in hand {C:attention}#1#{} times"
                 }
             },
+            j_dzhrj_cryptic_smeared_joker = {
+                name = "Cryptic Smeared Joker",
+                text = {
+                    "All cards count as the same suit",
+                    "{C:inactive}Hearts, obviously"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
