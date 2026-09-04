@@ -21,7 +21,7 @@ function eval_card(card, context)
     local retriggers_add = ret.dzhrj_retriggers_add or base_add
     local retriggers_mult = ret.dzhrj_retriggers_mult or base_mult
 
-    if (retriggers_add and retriggers_add ~= base_add) or (retriggers_mult and retriggers_mult ~= base_mult) then
+    if (retriggers_add ~= base_add) or (retriggers_mult ~= base_mult) then
         for k, v in pairs(g) do
             if type(v) == 'table' then
                 if v.repetitions then

@@ -135,6 +135,12 @@ return {
                     "{C:inactive}(e.g. destroy, shatter)"
                 }
             },
+            j_dzhrj_cryptic_acrobat = {
+                name = "Cryptic Acrobat",
+                text = {
+                    "Retrigger last card held in hand {C:attention}#1#{} times"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",

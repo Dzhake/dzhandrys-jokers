@@ -1,9 +1,10 @@
 SMODS.Joker {
     key = "martin",
     attributes = { "passive" },
-    blueprint_compat = false,
     atlas = "jokers",
     pos = { x = 5, y = 1 },
+    blueprint_compat = false,
+    immutable = true,
     rarity = 3,
     cost = 8,
     calculate = function(self, card, context)

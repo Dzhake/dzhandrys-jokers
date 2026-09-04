@@ -28,6 +28,7 @@ pattern = '''G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, pseudorandom_elem
 
 position = "at"
 
-payload = '''G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])'''
+payload = '''G.screenwipecard = Card(1, 1, G.CARD_W, G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])
+G.screenwipecard:set_edition({ negative = true }, true)'''
 
 match_indent = true
