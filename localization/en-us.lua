@@ -131,7 +131,7 @@ return {
             j_dzhrj_hanged_chad = {
                 name = "Hanged Chad",
                 text = {
-                    "Retrigger playing card {C:red}removal{} effects twice",
+                    "Retrigger playing card {C:red}removal{} effects {C:attention}twice",
                     "{C:inactive}(e.g. destroy, shatter)"
                 }
             },

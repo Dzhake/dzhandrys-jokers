@@ -78,7 +78,6 @@ function SMODS.calculate_context(context, return_table)
         end
 
         local count = ret.dzhrj_bonus_calculations_add or 0
-        print(count)
         for i = 0, count do
             ret = ref_calculate_context(context, return_table)
         end
