@@ -4,10 +4,10 @@ return {
         "gros_michel", "cavendish", "icon", "acrobat",
 
         -- uncommon
-        "ceremonial_dagger", "four_fingers", "madness", "oops", "rocket", "hanged chad",
+        "ceremonial_dagger", "four_fingers", "madness", "oops", "rocket", "hanged_chad",
 
         -- rare
-        "hack", "joker_stencil", "martin", "mime", "shortcut", "vagabond", "smeared_joker",
+        "joker_stencil", "martin", "mime", "shortcut", "vagabond", "smeared_joker",
 
         -- legendary
         "p03",

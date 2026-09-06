@@ -6,7 +6,6 @@ SMODS.current_mod.optional_features = {
     --post_trigger = true
 }
 
-
 local function load_dir(path)
     local index_info = SMODS.NFS.getInfo(SMODS.current_mod.path .. path .. "/" .. "_index.lua")
     if index_info and index_info.type == "file" then

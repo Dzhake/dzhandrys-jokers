@@ -29,8 +29,7 @@ SMODS.Joker {
                 func = (function()
                     SMODS.upgrade_poker_hands({
                         hands = { G.GAME.last_hand_played },
-                        level_up = card.ability.extra
-                            .levels,
+                        level_up = card.ability.extra.levels,
                         instant = true
                     })
                     return true

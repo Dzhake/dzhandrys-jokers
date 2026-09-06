@@ -105,8 +105,8 @@ return {
             j_dzhrj_cryptic_shortcut = {
                 name = "Cryptic Shortcut",
                 text = {
-                    "After drawing cards with no discards left,",
-                    "if your hand doesn't contain a {C:attention}Straight{},",
+                    "After drawing cards, if you have no discards left",
+                    "and your hand doesn't contain a {C:attention}Straight{},",
                     "gain {C:red}+1{} discard"
                 },
             },
@@ -120,7 +120,7 @@ return {
             j_dzhrj_hanged_chad = {
                 name = "Hanged Chad",
                 text = {
-                    "Retrigger playing card {C:red}removal{} effects {C:attention}twice",
+                    "Retrigger {C:attention}playing{} card {C:red}removal{} effects {C:attention}twice",
                     "{C:inactive}(e.g. destroy, shatter)"
                 }
             },
