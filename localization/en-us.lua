@@ -1,16 +1,5 @@
 return {
     descriptions = {
-        Back = {
-            b_dzhrj_x_deck = {
-                name = "X Deck",
-                text = {
-                    -- post_trigger only works with jokers
-                    --"When a {C:mult}+ Mult{} or {B:1,C:white}X Mult{} is applied,",
-                    "When a joker gives {C:mult}+ Mult{} or {B:1,C:white}X Mult{}",
-                    "an additional {X:mult,C:white}X#1#{} Mult is applied"
-                }
-            }
-        },
         Joker = {
             j_dzhrj_cryptic_joker_stencil = {
                 name = "Cryptic Joker Stencil",
@@ -29,7 +18,7 @@ return {
                 name = "Cryptic Mime",
                 text = {
                     "{E:1,X:spades,C:hearts}Double{} all retriggers",
-                    --"{C:inactive,s:0.8}(additive :c)"
+                    "{C:inactive,s:0.8}(additive :c)"
                 },
             },
             j_dzhrj_cryptic_ceremonial_dagger = {
@@ -82,7 +71,7 @@ return {
                     "if you're seeing this, something is wrong xd",
                 },
                 unlock = {
-                    "Come back when you unlock more jokers"
+                    "Come back when you unlock joker to the left"
                 }
             },
             j_dzhrj_cryptic_cavendish = {
