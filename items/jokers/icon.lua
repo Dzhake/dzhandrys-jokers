@@ -5,8 +5,8 @@ SMODS.Joker {
     pos = { x = 0, y = 2 },
     pixel_size = { h = 95 / 1.2 },
     blueprint_compat = true,
-    rarity = 1,
-    cost = 6,
+    rarity = 2,
+    cost = 8,
     config = {
         extra = {
             xmult = 2.5,

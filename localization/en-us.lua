@@ -107,8 +107,8 @@ return {
             j_dzhrj_cryptic_rocket = {
                 name = "Cryptic Rocket",
                 text = {
-                    "Upgrade all poker hands by {C:planet}#1#{}",
-                    "level at end of round.",
+                    "Upgrade {C:attention}last played poker hand{} by {C:planet}#1#{}",
+                    "level{C:inactive}s{} at end of round.",
                     "Upgrade amount increases by {C:planet}#2#{}",
                     "when {C:attention}Boss Blind{} is defeated",
                 },
