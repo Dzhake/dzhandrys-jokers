@@ -48,7 +48,8 @@ return {
             j_dzhrj_cryptic_oops = {
                 name = "Oops! All NaN",
                 text = {
-                    "All probabilities are {C:green,E:1,S:1.1}guaranteed"
+                    "All probabilities are {C:green,E:1,S:1.1}guaranteed",
+                    "{C:inactive}(ex: {C:green}1 in 3{C:inactive} -> {C:green}-nan in -nan{C:inactive})",
                 }
             },
             j_dzhrj_cryptic_gros_michel = {
@@ -135,6 +136,37 @@ return {
                 text = {
                     "All cards count as the same suit",
                     "{C:inactive}Hearts, obviously"
+                }
+            },
+            j_dzhrj_cryptic_greedy = {
+                name = "Cryptic Greedy Joker",
+                text = {
+                    "Played cards with {C:diamonds}#1#{} suit",
+                    "give {C:white,X:mult}X#2#{} Mult and {C:money}$#3#{} when scored"
+                }
+            },
+            j_dzhrj_cryptic_lusty = {
+                name = "Cryptic Lusty Joker",
+                text = {
+                    "Played cards with {C:hearts}#1#{} suit",
+                    "have {C:green}#2# in #3#{} chance to give {C:white,X:mult}X#4#{},",
+                    "otherwise, give {C:white,X:mult}X#5#"
+                }
+            },
+            j_dzhrj_cryptic_wrathful = {
+                name = "Cryptic Wrathful Joker",
+                text = {
+                    "Played cards with {C:spades}#1#{} suit",
+                    "give {C:white,X:mult}X#2#{} Mult",
+                    "and {C:white,X:chips}X#3#{} Chips when scored"
+                }
+            },
+            j_dzhrj_cryptic_gluttonous = {
+                name = "Cryptic Gluttonous Joker",
+                text = {
+                    "Played cards with {C:clubs}#1#{} suit",
+                    "give {C:mult}+#2#{} Mult, then {C:white,X:mult}X#3#{} Mult",
+                    "when scored"
                 }
             },
 

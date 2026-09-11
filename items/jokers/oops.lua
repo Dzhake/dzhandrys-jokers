@@ -10,9 +10,17 @@ SMODS.Joker {
     cost = 7,
     calculate = function(self, card, context)
         if context.fix_probability then
-            return {
-                numerator = context.denominator
-            }
+            if context.from_roll then
+                return {
+                    numerator = context.denominator
+                    -- hmm sure this won't lead to trouble with mods which divide the chance by 2 or similar        yeahh
+                }
+            else
+                return {
+                    numerator = 0 / 0,
+                    denominator = 0 / 0,
+                }
+            end
         end
     end
 }
