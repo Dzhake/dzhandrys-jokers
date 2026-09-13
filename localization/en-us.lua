@@ -169,6 +169,14 @@ return {
                     "when scored"
                 }
             },
+            j_dzhrj_cryptic_loyalty_card = {
+                name = "Cryptic Loyalty Card",
+                text = {
+                    "{X:red,C:white} X#1# {} Mult every {C:attention}#2#{} hands played",
+                    "hands amount decreases by {C:attention}#3#{} when triggered",
+                    "{C:inactive}#4#",
+                },
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",

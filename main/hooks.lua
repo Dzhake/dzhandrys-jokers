@@ -1,4 +1,4 @@
-local ref_eval_card = eval_card
+--[[local ref_eval_card = eval_card
 function eval_card(card, context)
     if not card then return end
     local g, post = ref_eval_card(card, context)
@@ -87,3 +87,4 @@ function SMODS.calculate_context(context, return_table)
         return ref_calculate_context(context, return_table)
     end
 end
+]]

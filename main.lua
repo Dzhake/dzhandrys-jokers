@@ -1,5 +1,7 @@
 assert(SMODS.current_mod.lovely, "Lovely patches were not loaded! Make sure your mod is in the right place.")
 
+Dzhandry_config = SMODS.current_mod.config or {}
+
 SMODS.current_mod.optional_features = {
     --quantum_enhancements = true,
     --object_weights = true,
@@ -51,7 +53,7 @@ end
 load_dir("main")
 load_dir("items")
 
-local draw_card_ref = draw_card
-function draw_card(from, to, percent, dir, sort, card, delay, mute, stay_flipped, vol, discarded_only)
-    return draw_card_ref(from, to, percent, dir, sort, card, 0, mute, stay_flipped, vol, discarded_only)
-end
+--local draw_card_ref = draw_card
+--function draw_card(from, to, percent, dir, sort, card, delay, mute, stay_flipped, vol, discarded_only)
+--return draw_card_ref(from, to, percent, dir, sort, card, 0, mute, stay_flipped, vol, discarded_only)
+--end

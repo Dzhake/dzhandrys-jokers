@@ -1,6 +1,6 @@
 SMODS.Joker {
     key = "cryptic_ceremonial_dagger",
-    attributes = { "cryptic", "joker" },
+    attributes = { "cryptic", "joker", "economy" },
     atlas = "jokers",
     -- if changing pos, search for "POS" in this file
     pos = { x = 0, y = 0 },
@@ -27,6 +27,7 @@ SMODS.Joker {
         end
     end,
     set_sprites = function(self, card, front)
+        if not card.config.center.unlocked or not card.config.center.discovered then return end
         G.E_MANAGER:add_event(Event({
             func = function()
                 local x = math.floor(math.max(math.min(card.ability.extra.jokers_sold, 3), 0))

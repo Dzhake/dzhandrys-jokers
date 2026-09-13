@@ -4,8 +4,9 @@ SMODS.Joker {
     atlas = "jokers",
     pos = { x = 7, y = 1 },
     blueprint_compat = true,
+    perishable_compat = false,
     rarity = 3,
-    cost = 10,
+    cost = 11,
     config = { extra = { levels = 1, increase = 1 } },
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.levels, card.ability.extra.increase } }
