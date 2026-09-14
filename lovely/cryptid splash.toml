@@ -11,17 +11,13 @@ pattern = '''local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/
 card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
 card_size*G.CARD_W, card_size*G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)'''
 
-position = "at"
+position = "after"
 
 payload = '''
 if Dzhandry_config.cryptid_splash then
-    local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
+    card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
     card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
     card_size*G.CARD_W, card_size*G.CARD_H, G.P_CENTERS["c_cryptid"], G.P_CENTERS["c_cryptid"])
-else
-    local card = Card(  card_pos.x + G.ROOM.T.w/2 - G.CARD_W*card_size/2,
-    card_pos.y + G.ROOM.T.h/2 - G.CARD_H*card_size/2,
-    card_size*G.CARD_W, card_size*G.CARD_H, pseudorandom_element(G.P_CARDS), G.P_CENTERS.c_base)
 end
 '''
 match_indent = true
