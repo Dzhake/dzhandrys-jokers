@@ -1,7 +1,7 @@
 return {
     files = {
         -- common
-        "gros_michel", "cavendish", "acrobat",
+        "gros_michel", "cavendish", "acrobat", "hanging_chad",
 
         -- uncommon
         "greedy", "lusty", "wrathful", "gluttonous", "icon", "ceremonial_dagger", "four_fingers", "madness", "oops",

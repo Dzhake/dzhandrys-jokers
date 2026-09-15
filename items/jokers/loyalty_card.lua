@@ -36,7 +36,7 @@ SMODS.Joker {
                 math.ceil(extra.hands_reset) + 1,
                 extra.hands_change,
                 localize { type = 'variable', key = (extra.hands_until_trigger == 0 and 'loyalty_active' or 'loyalty_inactive'), vars = { extra.hands_until_trigger } },
-                localize { type = 'variable', key = (next_decrease and 'dzhrj_loyalty_singular_triggers' or 'dzhrj_loyalty_plural_triggers'), vars = { next_decrease and 1 or 2 } },
+                localize { type = 'variable', key = (extra.hands_reset == 0 and 'dzhrj_loyalty_max_level' or next_decrease and 'dzhrj_loyalty_singular_triggers' or 'dzhrj_loyalty_plural_triggers'), vars = { next_decrease and 1 or 2 } },
             }
         }
     end,

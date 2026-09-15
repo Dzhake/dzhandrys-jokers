@@ -178,6 +178,13 @@ return {
                     "{C:inactive}#5#"
                 },
             },
+            j_dzhrj_cryptic_hanging_chad = {
+                name = "Cryptic Hanging Chad",
+                text = {
+                    "When a playing card is scored, move it to the right",
+                    "{C:inactive}Applies during scoring, meaning jokers to the right trigger after the move"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
@@ -201,6 +208,7 @@ return {
         v_dictionary = {
             dzhrj_loyalty_plural_triggers = "#1# triggers until upgrade",
             dzhrj_loyalty_singular_triggers = "#1# trigger until upgrade",
+            dzhrj_loyalty_max_level = "Max level"
         }
     }
 }
