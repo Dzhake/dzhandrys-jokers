@@ -173,8 +173,9 @@ return {
                 name = "Cryptic Loyalty Card",
                 text = {
                     "{X:red,C:white} X#1# {} Mult every {C:attention}#2#{} hands played",
-                    "hands amount decreases by {C:attention}#3#{} when triggered",
+                    "hands amount decreases by {C:attention}1{} every other trigger",
                     "{C:inactive}#4#",
+                    "{C:inactive}#5#"
                 },
             },
 
@@ -193,6 +194,13 @@ return {
                     "{C:inactive}(Dance of Cards is a really cool game)"
                 }
             },
+        }
+    },
+
+    misc = {
+        v_dictionary = {
+            dzhrj_loyalty_plural_triggers = "#1# triggers until upgrade",
+            dzhrj_loyalty_singular_triggers = "#1# trigger until upgrade",
         }
     }
 }
