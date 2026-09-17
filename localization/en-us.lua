@@ -185,6 +185,14 @@ return {
                     "{C:inactive}Applies during scoring, meaning jokers to the right trigger after the move"
                 }
             },
+            j_dzhrj_cryptic_credit_card = {
+                name = "Cryptic Credit Card",
+                text = {
+                    "When you gain money, increase debt limit",
+                    "by {C:white,X:money}X#2#{} the money value instead",
+                    "{C:inactive}Currently gives {C:red}$-#1# {C:inactive}debt limit",
+                },
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",

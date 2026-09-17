@@ -1,4 +1,4 @@
---[[local ref_eval_card = eval_card
+local ref_eval_card = eval_card
 function eval_card(card, context)
     if not card then return end
     local g, post = ref_eval_card(card, context)
@@ -87,4 +87,27 @@ function SMODS.calculate_context(context, return_table)
         return ref_calculate_context(context, return_table)
     end
 end
-]]
+
+local ref_ease_dollars = ease_dollars
+function ease_dollars(mod, instant)
+    if mod < 0 then
+        ref_ease_dollars(mod, instant)
+        return
+    end
+    local credit_cards = SMODS.find_card("j_dzhrj_cryptic_credit_card")
+    if not next(credit_cards) then
+        ref_ease_dollars(mod, instant)
+        return
+    end
+    local card = credit_cards[1]
+    local scalar_table = { scalar = mod * card.ability.extra.bankrupt_at_mod }
+    SMODS.scale_card(card, {
+        ref_table = card.ability.extra,
+        ref_value = "bankrupt_at",
+        scalar_value = "scalar",
+        scalar_table = scalar_table,
+        no_message = true,
+    })
+    card:juice_up(0.8)
+    G.GAME.bankrupt_at = G.GAME.bankrupt_at - scalar_table.scalar
+end
