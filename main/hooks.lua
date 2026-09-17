@@ -1,3 +1,4 @@
+-- bonus retriggers hooks (cryptic mime)
 local ref_eval_card = eval_card
 function eval_card(card, context)
     if not card then return end
@@ -62,6 +63,7 @@ function SMODS.update_context_flags(context, flags)
     ref_update_context_flags(context, flags)
 end
 
+-- context retriggers (hanged chad)
 local ref_calculate_context = SMODS.calculate_context
 function SMODS.calculate_context(context, return_table)
     if not G._dzhrj_calculating_bonus_calculations and context.remove_playing_cards then
@@ -88,6 +90,7 @@ function SMODS.calculate_context(context, return_table)
     end
 end
 
+-- cryptic credit card hook
 local ref_ease_dollars = ease_dollars
 function ease_dollars(mod, instant)
     if mod < 0 then

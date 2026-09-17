@@ -23,3 +23,5 @@ SMODS.Joker {
         G.GAME.bankrupt_at = G.GAME.bankrupt_at + card.ability.extra.bankrupt_at
     end,
 }
+
+-- ease_dollars hook in main/hooks.lua
