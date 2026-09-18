@@ -209,8 +209,8 @@ return {
                     "{C:attention}Skip{} any booster pack to reroll the card"
                 }
             },
-            j_dzhrj_cryptic_drunkyard = {
-                name = "Cryptic Drunkyard",
+            j_dzhrj_cryptic_drunkard = {
+                name = "Cryptic Drunkard",
                 text = {
                     "{C:white,X:attention}-1{} Ante"
                 }

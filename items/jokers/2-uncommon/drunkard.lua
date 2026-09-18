@@ -1,5 +1,5 @@
 SMODS.Joker {
-    key = "cryptic_drunkyard",
+    key = "cryptic_drunkard",
     attributes = { "cryptic", "passive" },
     atlas = "jokers",
     pos = { x = 8, y = 3 },
