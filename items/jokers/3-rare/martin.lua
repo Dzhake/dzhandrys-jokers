@@ -11,6 +11,7 @@ SMODS.Joker {
         if context.blueprint then return end
         if context.individual and context.cardarea == G.play and not context.other_card.debuff then
             context.other_card.ability.dzhrj_played_this_round = true
+            return
         end
 
         if context.hand_drawn and context.first_hand_drawn then

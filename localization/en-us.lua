@@ -182,7 +182,8 @@ return {
                 name = "Cryptic Hanging Chad",
                 text = {
                     "When a playing card is scored, move it to the right",
-                    "{C:inactive}Applies during scoring, meaning jokers to the right trigger after the move"
+                    "{C:inactive}Applies during scoring, meaning",
+                    "{C:inactive}jokers to the right trigger after the move",
                 }
             },
             j_dzhrj_cryptic_credit_card = {
@@ -192,6 +193,13 @@ return {
                     "by {C:white,X:money}X#2#{} the money value instead",
                     "{C:inactive}Currently gives {C:red}$-#1# {C:inactive}debt limit",
                 },
+            },
+            j_dzhrj_cryptic_cartomancer = {
+                name = "Cryptic Cartomancer",
+                text = {
+                    "{C:tarot}Tarot{} booster packs have a {C:attention}guaranteed {C:tarot}#1#{}.",
+                    "{C:attention}Skip{} any booster pack to reroll the card"
+                }
             },
 
             j_dzhrj_p03 = {
