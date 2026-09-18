@@ -197,7 +197,15 @@ return {
             j_dzhrj_cryptic_cartomancer = {
                 name = "Cryptic Cartomancer",
                 text = {
-                    "{C:tarot}Tarot{} booster packs have a {C:attention}guaranteed {C:tarot}#1#{}.",
+                    "{C:tarot}Arcana{} booster packs have a {C:attention}guaranteed {C:tarot}#1#{}.",
+                    "{C:attention}Skip{} any booster pack to reroll the card"
+                }
+            },
+            j_dzhrj_cryptic_astronomer = {
+                name = "Cryptic Astronomer",
+                text = {
+                    --"{C:attention}+#2#{} choice in {C:planet}Celestial{} booster packs.",
+                    "All planets are replaced with {C:planet}#1#{}.",
                     "{C:attention}Skip{} any booster pack to reroll the card"
                 }
             },

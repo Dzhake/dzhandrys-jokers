@@ -90,7 +90,7 @@ function SMODS.calculate_context(context, return_table)
     end
 end
 
--- cryptic credit card hook
+-- cryptic credit card effect
 local ref_ease_dollars = ease_dollars
 function ease_dollars(mod, instant)
     if mod < 0 then
@@ -113,4 +113,16 @@ function ease_dollars(mod, instant)
     })
     card:juice_up(0.8)
     G.GAME.bankrupt_at = G.GAME.bankrupt_at - scalar_table.scalar
+end
+
+-- astronomer effect
+local ref_create_card = create_card
+function create_card(_type, area, legendary, _rarity, skip_materialize, soulable, forced_key, key_append)
+    if _type == "Planet" then
+        local astronomers = SMODS.find_card("j_dzhrj_cryptic_astronomer")
+        if next(astronomers) then
+            forced_key = astronomers[1].ability.extra.planet
+        end
+    end
+    return ref_create_card(_type, area, legendary, _rarity, skip_materialize, soulable, forced_key, key_append)
 end
