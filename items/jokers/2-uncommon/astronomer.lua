@@ -7,7 +7,7 @@ SMODS.Joker {
     attributes = { "cryptic", "generation", "booster", "consumable", "planet" },
     atlas = "jokers",
     pos = { x = 7, y = 3 },
-    blueprint_compat = true,
+    blueprint_compat = false,
     demicoloncompat = false,
     immutable = false,
     rarity = 2,
