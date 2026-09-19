@@ -215,6 +215,14 @@ return {
                     "{C:white,X:attention}-1{} Ante"
                 }
             },
+            j_dzhrj_cryptic_to_the_moon = {
+                name = "Cryptic To the Moon",
+                text = {
+                    "All jokers scale {C:white,X:attention}+X#2#{} faster",
+                    "for every {C:money}$#1#{} you have.",
+                    "{C:inactive}Currently {C:white,X:attention}X#3#"
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
