@@ -2,7 +2,7 @@ SMODS.Booster {
     key = "soul_pack",
     attributes = {},
     atlas = "boosters",
-    weight = 0.05,
+    weight = 0.1,
     kind = 'dzhrj_Soul',
     cost = 15,
     pos = { x = 3, y = 0 },

@@ -276,8 +276,8 @@ return {
                 name = "Soul Pack",
                 text = {
                     "Contains {C:legendary,E:1}The Soul{} card.",
-                    "{C:inactive}Can appear only once until",
-                    "{C:inactive}showdown boss is defeated"
+                    "{C:inactive}After use, can appear only once until",
+                    "{C:inactive}showdown boss blind is defeated"
                 }
             },
         },
