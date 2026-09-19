@@ -1,0 +1,34 @@
+[manifest] # Header for the file, this should only be here once at the beginning
+version = "1.0.0"
+priority = 0      # Priority for loading the file
+
+# Make booster pack pack use particles and colors of a random pack
+# Game:splash_screen()
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = '''if G.pack_cards then '''
+
+position = "after"
+
+payload = '''
+if G.GAME._dzhrj_booster_pack then
+    local random_pack = pseudorandom_element(pack_cards, pseudoseed("dzhrj_booster_pack_visuals"))
+    if random_pack.ease_background_color then random_pack:ease_background_color() end
+    if random_pack.particles then random_pack:particles() end
+end
+'''
+match_indent = true
+
+# Prevent booster in booster softlock
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''if card.ability.set == 'Booster' then G.GAME.PACK_INTERRUPT = G.STATE end '''
+position = "at"
+payload = '''
+if G.STATE ~= G.STATES.SMODS_BOOSTER_OPENED and G.STATE ~= G.STATES.TAROT_PACK and G.STATE ~= G.STATES.PLANET_PACK and G.STATE ~= G.STATES.SPECTRAL_PACK and G.STATE ~= G.STATES.STANDARD_PACK and G.STATE ~= G.STATES.BUFFOON_PACK then
+    if card.ability.set == 'Booster' then G.GAME.PACK_INTERRUPT = G.STATE end
+end
+'''
+match_indent = true

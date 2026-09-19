@@ -126,3 +126,95 @@ function create_card(_type, area, legendary, _rarity, skip_materialize, soulable
     end
     return ref_create_card(_type, area, legendary, _rarity, skip_materialize, soulable, forced_key, key_append)
 end
+
+-- booster pack pack patch
+local ref_use_card = G.FUNCS.use_card
+function G.FUNCS.use_card(e, mute, nosave)
+    if G.GAME._dzhrj_booster_pack and e.config.ref_table.ability.set == "Booster" then
+        G.GAME._dzhrj_booster_pack = nil
+        stop_use()
+        if G.booster_pack then
+            G.booster_pack.alignment.offset.y = G.ROOM.T.y + 9
+            G.booster_pack:remove()
+            G.booster_pack = nil
+            if G.booster_pack_sparkles then
+                G.booster_pack_sparkles:remove(); G.booster_pack_sparkles = nil
+            end
+            if G.booster_pack_stars then
+                G.booster_pack_stars:remove(); G.booster_pack_stars = nil
+            end
+            if G.booster_pack_meteors then
+                G.booster_pack_meteors:remove(); G.booster_pack_meteors = nil
+            end
+        end
+
+        --[[G.E_MANAGER:add_event(Event({
+            trigger = 'after',
+            delay = 0.2 * delayfac,
+            func = function()
+                G.FUNCS.draw_from_hand_to_deck()
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 0.2 * delayfac,
+                    func = function()
+                        if G.shop and G.shop.alignment.offset.py then
+                            G.shop.alignment.offset.y = G.shop.alignment.offset.py
+                            G.shop.alignment.offset.py = nil
+                        end
+                        if G.blind_select and G.blind_select.alignment.offset.py then
+                            G.blind_select.alignment.offset.y = G.blind_select.alignment.offset.py
+                            G.blind_select.alignment.offset.py = nil
+                        end
+                        if G.round_eval and G.round_eval.alignment.offset.py then
+                            G.round_eval.alignment.offset.y = G.round_eval.alignment.offset.py
+                            G.round_eval.alignment.offset.py = nil
+                        end
+                        G.CONTROLLER.interrupt.focus = true
+
+                        G.E_MANAGER:add_event(Event({
+                            func = function()
+                                if G.shop then G.CONTROLLER:snap_to({ node = G.shop:get_UIE_by_ID('next_round_button') }) end
+                                return true
+                            end
+                        }))
+                        G.STATE = G.GAME.PACK_INTERRUPT
+                        ease_background_colour_blind(G.GAME.PACK_INTERRUPT)
+                        G.GAME.PACK_INTERRUPT = nil
+                        return true
+                    end
+                }))
+                for i = 1, #G.GAME.tags do
+                    if G.GAME.tags[i]:apply_to_run({ type = 'new_blind_choice' }) then break end
+                end
+
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 0.2 * delayfac,
+                    func = function()
+                        save_run()
+                        return true
+                    end
+                }))
+
+                return true
+            end
+        }))]]
+        --[[G.FUNCS.end_consumeable(nil, 0)
+        -- double nested event because end_consumeable has some, and we need to run use_card after events in use_consumeable
+        G.E_MANAGER:add_event(Event({
+            trigger = 'after',
+            func = function()
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    func = function()
+                        ref_use_card(e, mute, nosave)
+                        return true
+                    end
+                }))
+                return true
+            end
+        }))
+        return]]
+    end
+    ref_use_card(e, mute, nosave)
+end

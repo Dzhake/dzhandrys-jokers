@@ -239,7 +239,48 @@ return {
                     "{C:inactive}(Dance of Cards is a really cool game)"
                 }
             },
-        }
+        },
+        Other = {
+            p_dzhrj_booster_pack_pack_1 = {
+                name = "Booster Pack Pack",
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2# {C:chips}Booster packs{} to",
+                    "be opened immediately",
+                },
+                group_name = "Choose only one"
+            },
+            p_dzhrj_booster_pack_pack_2 = {
+                name = "Booster Pack Pack",
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2# {C:chips}Booster packs{} to",
+                    "be opened immediately",
+                    "{C:inactive}Art from:",
+                    "{C:inactive}Aikoyori's shenanigans",
+                    "{C:inactive}Cryptid",
+                    "{C:inactive}UNIK's mod",
+                },
+                group_name = "Choose only one"
+            },
+            p_dzhrj_booster_pack_pack_jumbo = {
+                name = "Jumbo Booster Pack Pack",
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2# {C:chips}Booster packs{} to",
+                    "be opened immediately",
+                },
+                group_name = "Choose only one"
+            },
+            p_dzhrj_soul_pack = {
+                name = "Soul Pack",
+                text = {
+                    "Contains {C:legendary,E:1}The Soul{} card.",
+                    "{C:inactive}Can appear only once until",
+                    "{C:inactive}showdown boss is defeated"
+                }
+            },
+        },
     },
 
     misc = {
@@ -247,6 +288,9 @@ return {
             dzhrj_loyalty_plural_triggers = "#1# triggers until upgrade",
             dzhrj_loyalty_singular_triggers = "#1# trigger until upgrade",
             dzhrj_loyalty_max_level = "Max level"
-        }
+        },
+        dictionary = {
+            p_dzhrj_booster_pack_pack = "Booster pack pack"
+        },
     }
 }
