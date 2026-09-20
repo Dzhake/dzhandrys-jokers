@@ -149,8 +149,8 @@ return {
                 name = "Cryptic Lusty Joker",
                 text = {
                     "Played cards with {C:hearts}#1#{} suit",
-                    "have {C:green}#2# in #3#{} chance to give {C:white,X:mult}X#4#{},",
-                    "otherwise, give {C:white,X:mult}X#5#"
+                    "have {C:green}#2# in #3#{} chance to give {C:white,X:mult}X#4#{} Mult",
+                    "when scored, otherwise, give {C:white,X:mult}X#5#{} Mult"
                 }
             },
             j_dzhrj_cryptic_wrathful = {
@@ -172,8 +172,9 @@ return {
             j_dzhrj_cryptic_loyalty_card = {
                 name = "Cryptic Loyalty Card",
                 text = {
-                    "{X:red,C:white} X#1# {} Mult every {C:attention}#2#{} hands played",
-                    "hands amount decreases by {C:attention}1{} every other trigger",
+                    "{X:red,C:white} X#1# {} Mult every {C:attention}#2#{} hands played,",
+                    "hands amount decreases by {C:attention}1{}",
+                    "every other trigger",
                     "{C:inactive}#4#",
                     "{C:inactive}#5#"
                 },
