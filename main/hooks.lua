@@ -65,7 +65,7 @@ end
 
 -- context retriggers (hanged chad)
 local ref_calculate_context = SMODS.calculate_context
-function SMODS.calculate_context(context, return_table)
+function SMODS.calculate_context(context, return_table, no_resolve)
     if not G._dzhrj_calculating_bonus_calculations and context.remove_playing_cards then
         G._dzhrj_calculating_bonus_calculations = true
 
@@ -76,18 +76,17 @@ function SMODS.calculate_context(context, return_table)
         })
 
         if not ret then
-            return ref_calculate_context(context, return_table)
+            return ref_calculate_context(context, return_table, no_resolve)
         end
 
         local count = ret.dzhrj_bonus_calculations_add or 0
         for i = 0, count do
-            ret = ref_calculate_context(context, return_table)
+            ret = ref_calculate_context(context, return_table, no_resolve)
         end
         G._dzhrj_calculating_bonus_calculations = nil
         return ret
-    else
-        return ref_calculate_context(context, return_table)
     end
+    return ref_calculate_context(context, return_table, no_resolve)
 end
 
 -- cryptic credit card effect
@@ -150,10 +149,4 @@ function G.FUNCS.use_card(e, mute, nosave)
         end
     end
     ref_use_card(e, mute, nosave)
-end
-
-local ref_pseudorandom = pseudorandom
-function pseudorandom(seed, min, max)
-    if SMODS.find_card("j_dzhrj_minmaxxing") then return min or 0 end
-    return ref_pseudorandom(seed, min, max)
 end

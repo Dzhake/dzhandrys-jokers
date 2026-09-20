@@ -3,7 +3,7 @@ SMODS.Booster {
     group_key = "p_dzhrj_booster_pack_pack",
     attributes = {},
     atlas = "boosters",
-    weight = 3,
+    weight = 2,
     kind = 'dzhrj_Booster',
     cost = 8,
     pos = { x = 0, y = 1 },

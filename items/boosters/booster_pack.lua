@@ -51,6 +51,6 @@ local function create_basic_booster_pack_pack(key, weight, cost, x, y, extra, ch
     }
 end
 
-create_basic_booster_pack_pack("booster_pack_pack_1", 1.5, 5, 0, 0, 3, 1)
-create_basic_booster_pack_pack("booster_pack_pack_2", 1.5, 5, 1, 0, 3, 1)
-create_basic_booster_pack_pack("booster_pack_pack_jumbo", 1.5, 8, 2, 0, 5, 1)
+create_basic_booster_pack_pack("booster_pack_pack_1", 1, 5, 0, 0, 3, 1)
+create_basic_booster_pack_pack("booster_pack_pack_2", 1, 5, 1, 0, 3, 1)
+create_basic_booster_pack_pack("booster_pack_pack_jumbo", 1, 8, 2, 0, 5, 1)
