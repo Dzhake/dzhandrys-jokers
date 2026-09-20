@@ -32,3 +32,16 @@ if G.STATE ~= G.STATES.SMODS_BOOSTER_OPENED and G.STATE ~= G.STATES.TAROT_PACK a
 end
 '''
 match_indent = true
+
+# Invert weights for rare booster pack
+[[patches]]
+[patches.pattern]
+target = """=[SMODS _ "src/overrides.lua"]"""
+pattern = "v.current_weight = v.get_weight and v:get_weight() or v.weight or 1"
+position = "after"
+payload = '''
+if G.GAME._dzhrj_booster_invert_weights then
+    v.current_weight = 1 / v.current_weight
+end
+'''
+match_indent = true

@@ -223,6 +223,14 @@ return {
                     "{C:inactive}Currently {C:white,X:attention}X#3#"
                 }
             },
+            j_dzhrj_minmaxxing = {
+                name = "Minmaxxing",
+                text = {
+                    "Makes wheel of fortune always trigger, and some other stuff.",
+                    "{C:inactive}Most notably, space joker, bloodstone and cavendish always trigger,",
+                    "{C:inactive}cards in standard packs never have seals/enhancements",
+                }
+            },
 
             j_dzhrj_p03 = {
                 name = "P03",
@@ -240,6 +248,9 @@ return {
                 }
             },
         },
+
+
+
         Other = {
             p_dzhrj_booster_pack_pack_1 = {
                 name = "Booster Pack Pack",
@@ -276,8 +287,17 @@ return {
                 name = "Soul Pack",
                 text = {
                     "Contains {C:legendary,E:1}The Soul{} card.",
-                    "{C:inactive}After use, can appear only once until",
+                    "{C:inactive}After use, does not appear until",
                     "{C:inactive}showdown boss blind is defeated"
+                }
+            },
+            p_dzhrj_rare_booster_pack_pack = {
+                name = "Rare Booster Pack Pack",
+                text = {
+                    "Choose {C:attention}#1#{} of up to",
+                    "{C:attention}#2# {C:chips}Booster packs{} to",
+                    "be opened immediately.",
+                    "{C:rare}Rare{} packs have higher rate"
                 }
             },
         },
@@ -290,7 +310,13 @@ return {
             dzhrj_loyalty_max_level = "Max level"
         },
         dictionary = {
-            p_dzhrj_booster_pack_pack = "Booster pack pack"
+            p_dzhrj_booster_pack_pack = "Booster pack pack",
+            c_dzhrj_cryptid_splash = "Cryptidier Splash",
+            c_dzhrj_cryptid_splash_desc = { "Makes Cryptid appear on splash (startup) screen" },
+            c_dzhrj_cryptid_screenwipe = "Cryptidier Screenwipe",
+            c_dzhrj_cryptid_screenwipe_desc = { "Makes Cryptid appear on screenwipe (loading) screen" },
+            c_dzhrj_negative_screenwipe = "Negative Screenwipe",
+            c_dzhrj_negative_screenwipe_desc = { "Makes the card on screenwipe (loading) screen Negative" },
         },
     }
 }

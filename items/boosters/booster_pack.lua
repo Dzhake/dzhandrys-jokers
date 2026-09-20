@@ -1,4 +1,4 @@
-local function create_booster_pack_pack(key, weight, cost, x, y, extra, choose)
+local function create_basic_booster_pack_pack(key, weight, cost, x, y, extra, choose)
     SMODS.Booster {
         key = key,
         group_key = "p_dzhrj_booster_pack_pack",
@@ -41,7 +41,7 @@ local function create_booster_pack_pack(key, weight, cost, x, y, extra, choose)
             if i >= 10000 then pack = nil end
 
             local booster = SMODS.create_card({
-                key = pack and pack.key or "p_arcana",
+                key = pack and pack.key or "p_arcana_normal_1",
                 area = G.pack_cards,
             })
             booster.cost = 0
@@ -51,6 +51,6 @@ local function create_booster_pack_pack(key, weight, cost, x, y, extra, choose)
     }
 end
 
-create_booster_pack_pack("booster_pack_pack_1", 3, 5, 0, 0, 3, 1)
-create_booster_pack_pack("booster_pack_pack_2", 3, 5, 1, 0, 3, 1)
-create_booster_pack_pack("booster_pack_pack_jumbo", 3, 8, 2, 0, 5, 1)
+create_basic_booster_pack_pack("booster_pack_pack_1", 1.5, 5, 0, 0, 3, 1)
+create_basic_booster_pack_pack("booster_pack_pack_2", 1.5, 5, 1, 0, 3, 1)
+create_basic_booster_pack_pack("booster_pack_pack_jumbo", 1.5, 8, 2, 0, 5, 1)
